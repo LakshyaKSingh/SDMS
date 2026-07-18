@@ -1,0 +1,32 @@
+{
+  "architecture": "YOLOv8-nano + MobileNetV3-Small",
+  "num_classes": 7,
+  "class_names": [
+    "10",
+    "100",
+    "20",
+    "200",
+    "2000",
+    "50",
+    "500"
+  ],
+  "cnn_img_size": 224,
+  "yolo_img_size": 416,
+  "cnn_test_accuracy": 100.0,
+  "yolo_map50": 0.9828,
+  "yolo_map50_95": 0.6895,
+  "cnn_params": "1.08M",
+  "yolo_params": "3.01M",
+  "total_params": "~4.1M",
+  "cnn_onnx_size_mb": 4.4,
+  "yolo_onnx_size_mb": 11.6,
+  "mobile_optimized": true,
+  "supported_formats": [
+    "pytorch",
+    "onnx"
+  ],
+  "training_dataset": [
+    "ViratGarg/currency",
+    "ViratGarg/currency2"
+  ]
+}
