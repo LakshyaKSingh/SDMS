@@ -183,7 +183,7 @@ class CurrencyDetector:
         bgr_img = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2BGR)
 
         # 2. Run YOLOv8 inference at correct resolution (416) with class-agnostic NMS to eliminate overlapping boxes
-        results = self.yolo_model(bgr_img, imgsz=416, conf=yolo_conf, iou=0.45, agnostic_nms=True, verbose=False)
+        results = self.yolo_model(bgr_img, imgsz=640, conf=yolo_conf, iou=0.45, agnostic_nms=True, verbose=False)
         result  = results[0]
 
         annotated  = image_rgb.copy()
