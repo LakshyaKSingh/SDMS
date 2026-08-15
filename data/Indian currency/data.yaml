@@ -1,0 +1,12 @@
+path: "E:/Documents/hello/imp_project1/data/Indian currency"
+train: train/images
+val: valid/images
+test: test/images
+
+names:
+  0: "10"
+  1: "100"
+  2: "20"
+  3: "200"
+  4: "50"
+  5: "500"
